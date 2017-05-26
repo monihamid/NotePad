@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApplication2.productInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="About Notepad" Height="350" Width="450" Background="PaleTurquoise">
+    <Grid>
+        <Button x:Name="bttOK" Content="OK" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="75"  Click="bttOK_click"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Margin="21,23,0,74" Width="178">
+            <Image x:Name="image" Source="Notepad_Logo.png"/>
+        </Border>
+        <TextBox x:Name="productDiscp" HorizontalAlignment="Right" Margin="0,118.5,23,56" IsEnabled ="false"  Text="Cteate your own Notepad" Width="196.5"
+            ScrollViewer.VerticalScrollBarVisibility="Visible" Background="PowderBlue"/>
+        <TextBlock x:Name="productName" HorizontalAlignment="Right" Margin="0,23,91.406,0" TextWrapping="Wrap" Text="Product Name: NotePad" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment"/>
+        <TextBlock x:Name="version" HorizontalAlignment="Right" Margin="0,43.96,150.042,0" TextWrapping="Wrap" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment"><Run Text="Version: 1.0.0"/></TextBlock>
+        <TextBlock x:Name="CopyRight" HorizontalAlignment="Right" Margin="0,64.92,38.662,0" TextWrapping="Wrap" VerticalAlignment="Top"
+                   Text="Copyright: All Copyrights reserved" d:LayoutOverrides="HorizontalAlignment" />
+        <TextBlock x:Name="Company" HorizontalAlignment="Right" Margin="0,85.88,60.452,0" TextWrapping="Wrap" Text="Company Name: SET Program" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment"/>
+
+
+
+    </Grid>
+</Window>
